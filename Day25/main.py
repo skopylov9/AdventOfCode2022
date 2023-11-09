@@ -11,5 +11,4 @@ def snafuToDecimal(snafuStr):
         value += pow(5, idx) * int(ch.replace('-', '-1').replace('=', '-2'))
     return value
 
-# Part 1: 122-12==0-01=00-0=02
-print(decimalToSnafu(sum([snafuToDecimal(snafuNumber) for snafuNumber in open('input.txt').read().split('\n')])))
+print('Part 1: {}'.format(decimalToSnafu(sum([snafuToDecimal(snafuNumber) for snafuNumber in open('input.txt').read().split('\n')]))))  # 122-12==0-01=00-0=02
